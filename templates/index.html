@@ -1,0 +1,410 @@
+<!-- My protfolio? -->
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/styles.min.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'css/styles.css' %}"> -->
+
+
+</head>
+
+<body class="main-content">
+
+
+    <header class="container header active " id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="{% static 'img/me.png' %}" alt="" />
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    Hi, I'm <span>Samir Chaulagain.</span>
+                    Passionate Developer.
+                </h1>
+                <p>
+                    I'm a Web Developer, I love to create beautiful and functional
+                    websites.I am not only Passionate but also enthusiast developer.
+                </p>
+                <div class="btn-con">
+
+                    <a href="/static/Profile.pdf" class="main-btn" id="downloadButton" target="_blank">
+                        <span class="btn-text">View my CV</span>
+                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container about ms-5 ps-5" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">About Me</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>Information About me</h4>
+                    <p align="justify">
+                        I'm passionate about web development and enjoy delving into the world of DevOps. Currently, I'm
+                        focusing on strengthening my skills in Data Structures and Algorithms (DSA) to enhance my
+                        problem-solving abilities.
+                        <br /><br />
+                        I've already completed several small projects, honing my skills along the way. I'm dedicated to
+                        continuous learning and growth in the ever-evolving field of technology.
+                    </p>
+
+                    <div class="btn-con">
+                        <a href="/static/Profile.pdf" class="main-btn" id="downloadButton" download>
+                            <span class="btn-text">Download CV</span>
+                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">5+</p>
+                            <p class="small-text">
+                                Projects <br />
+                                Completed
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">1+</p>
+                            <p class="small-text">
+                                Years of <br />
+                                experience
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">8+</p>
+                            <p class="small-text">
+                                Happy <br />
+                                Clients
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">0+</p>
+                            <p class="small-text">
+                                Customer <br />
+                                reviews
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats">
+                <h4 class="stat-title">My Skills</h4>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title">HTML</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">CSS</p>
+                        <div class="progress-con">
+                            <p class="prog-text">95%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">JavaScript</p>
+                        <div class="progress-con">
+                            <p class="prog-text">25%</p>
+                            <div class="progress">
+                                <span class="js"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">HTML/CSS</p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span class="react"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Java</p>
+                        <div class="progress-con">
+                            <p class="prog-text">5%</p>
+                            <div class="progress">
+                                <span class="node"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Python</p>
+                        <div class="progress-con">
+                            <p class="prog-text">10%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Backend</p>
+                        <div class="progress-con">
+                            <p class="prog-text">20%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Deveops</p>
+                        <div class="progress-con">
+                            <p class="prog-text">20%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="stat-title">My Timeline</h4>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">201 - 2020</p>
+                    <h5>+2 degree<span> - Oxbridge International College</span></h5>
+                    <p>
+                        I completed my +2 study from Oxbridge international College.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2021-2024 present</p>
+                    <h5>Bachelor's degree, Computer Science<span> - Wolverhampton University</span></h5>
+                    <p>
+                        Recently graduated as BSc(hons) Student from HCK afiliated with University of Wolverhampton.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="container ms-5 ps-5" id="portfolio">
+            <div class="main-title">
+                <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+            </div>
+            <p class="port-text">
+                Here is some of my work that I've done in various programming
+                languages.
+            </p>
+            <div class="portfolios">
+                {% for project in projects %}
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="{{ project.image.url }}" alt="{{ project.title }}" />
+                    </div>
+                    <div class="hover-items">
+                        <a href="{{ project.url }}">
+                            <h3>{{ project.title }}</h3>
+                        </a>
+                        <div class="icons">
+                            <a href="{{ project.github_link }}" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="{{ project.twitter_link }}" class="icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="{{ project.linkedin_link }}" class="icon">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </section>
+        <section class="container ms-5 ps-5" id="blogs">
+            <div class="blogs-content">
+                <div class="main-title">
+                    <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
+                </div>
+                <div class="blogs">
+                    {%for post in post %}
+                    <div class="blog">
+
+                        <img src="{post.image.url}" alt="" />
+                        <div class="blog-text">
+                            <h4>{post.title}</h4>
+                            <p>
+                                {post.body}
+                            </p>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </section>
+        <section class="container contact ms-5 ps-5" id="contact">
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+                </div>
+                <div class="contact-content-con">
+                    <div class="left-contact">
+                        <h4>Contact me here</h4>
+                        <p>
+                            We're all in this together, and we should treat each other like that.
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>
+                                        <span>Location</span>
+                                        : Bhaktapur, Nepal
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+
+                                    <span><span>Email</span>: royalchaulagain321@gmail.com</span>
+                                </div>
+                                <p>
+                                </p>
+                            </div>
+                            <div class="contact-item mt-2">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+
+                                    <span><span>Education</span>: Herald College Kathmandu, Wolverhampton
+                                        University</span>
+                                </div>
+                                <p>
+                                </p>
+                            </div>
+                            <div class="contact-item mt-2">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+
+                                    <span><span>Mobile Number</span>: 9803510597</span>
+                                </div>
+                                <p>
+                                </p>
+                            </div>
+                            <div class="contact-item mt-2">
+                                <div class="icon">
+                                    <i class="fas fa-globe-africa"></i>
+
+                                    <span><span>Languages</span>: Nepali, English, Hindi</span>
+                                </div>
+                                <p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                <a href="www.facebook.com" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-contact">
+                        <form action="{% url 'protfolio:send_mail' %}" method="post" class="contact-form">
+                            {% csrf_token %}
+                            <div class="input-control i-c-2">
+                                <input type="text" required placeholder="YOUR NAME" name="name" />
+                                <input type="email" required placeholder="YOUR EMAIL" name="email" />
+                            </div>
+                            <div class="input-control">
+                                <input type="text" required placeholder="ENTER SUBJECT" name="subject" />
+                            </div>
+                            <div class="input-control">
+                                <textarea type="text" id="" cols="15" rows="8" placeholder="Message Here..."
+                                    name="message"></textarea>
+                            </div>
+                            <div class="submit-btn">
+                                <button type="submit" class="send-btn">
+                                    <span class="btn-text">Send Mail</span>
+                                    <span class="btn-icon"><i class="fas fa-envelope"></i></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="controls ">
+        <div class="control active-btn" data-id="home">
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="control" data-id="about">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="control" data-id="portfolio">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="control" data-id="blogs">
+            <i class="far fa-newspaper"></i>
+        </div>
+        <div class="control" data-id="contact">
+            <i class="fas fa-envelope-open"></i>
+        </div>
+    </div>
+    <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+    </div>
+    <script src="{% static 'js/app.js' %}"></script>
+
+</body>
+
+</html>
