@@ -20,9 +20,9 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t portfolio:latest .
+          docker build -t royalchaulagain321486/portfolio:latest .
           echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
-          docker push portfolio:latest
+          docker push royalchaulagain321486/portfolio:latest
         env:
           DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
           DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
