@@ -20,9 +20,9 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t royalchaulagain321486/muserentalhub:latest .
+          docker build -t royalchaulagain321486/portfolio:latest .
           echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
-          docker push royalchaulagain321486/muserentalhub:latest
+          docker push royalchaulagain321486/portfolio:latest
         env:
           DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
           DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
@@ -34,8 +34,8 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan 34.100.186.194 >> ~/.ssh/known_hosts
 
-      - name: SSH into Google Cloud VM
-        run: |
-          ssh -v np03cs4m210035@34.100.186.194 'sudo docker container prune -f && sudo docker image prune -f && sudo docker pull royalchaulagain321486/muserentalhub:latest && sudo docker stop muserentalhub_container && sudo docker rm muserentalhub_container && sudo docker run -d --name muserentalhub_container -p 80:8000 royalchaulagain321486/muserentalhub:latest'
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      # - name: SSH into Google Cloud VM
+      #   run: |
+      #     ssh -v np03cs4m210035@34.100.186.194 'sudo docker container prune -f && sudo docker image prune -f && sudo docker pull royalchaulagain321486/portfolio:latest && sudo docker stop portfolio_container && sudo docker rm portfolio_container && sudo docker run -d --name portfolio_container -p 80:8000 royalchaulagain321486/portfolio:latest'
+      #   env:
+      #     SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
